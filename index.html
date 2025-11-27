@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BERLIN - علامة الملابس الحديثة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* خلفية سوداء */
+            color: #fff; /* نصوص بيضاء */
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+        }
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ccc;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .product {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        .shop-btn {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .shop-btn:hover {
+            background-color: #ccc;
+        }
+        .contact {
+            padding: 40px;
+            text-align: center;
+            background-color: #111;
+        }
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+        .contact form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+        .contact button {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BERLIN</div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products" class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/250x200?text=قميص+أسود" alt="قميص أسود">
+            <h3>قميص أسود</h3>
+            <p>السعر: 50 دولار</p>
+            <button class="shop-btn">تسوق الآن</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/250x200?text=بنطال+أزرق" alt="بنطال أزرق">
+            <h3>بنطال أزرق</h3>
+            <p>السعر: 70 دولار</p>
+            <button class="shop-btn">تسوق الآن</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/250x200?text=جاكيت+رمادي" alt="جاكيت رمادي">
+            <h3>جاكيت رمادي</h3>
+            <p>السعر: 100 دولار</p>
+            <button class="shop-btn">تسوق الآن</button>
+        </div>
+        <!-- أضف المزيد من المنتجات هنا -->
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>تواصل معنا</h2>
+        <form>
+            <input type="text" placeholder="اسمك" required>
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <textarea placeholder="رسالتك" rows="5" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 BERLIN. جميع الحقوق محفوظة.</p>
+        <div class="social-links">
+            <a href="#" title="فيسبوك">📘</a>
+            <a href="#" title="إنستغرام">📷</a>
+            <a href="#" title="تويتر">🐦</a>
+        </div>
+    </footer>
+</body>
+</html>
